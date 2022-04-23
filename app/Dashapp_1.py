@@ -12,6 +12,12 @@ from utilities.supportive_functions import preprocess, calculate_results
 
 from dash.dependencies import Input, Output, State
 
+from sklearn import metrics
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import RandomizedSearchCV
+
 # ---------------------------------------
 
 app = dash.Dash(__name__)
@@ -129,6 +135,8 @@ app.layout = html.Div([
                State('date-picker-range','end_date')])
 
 def update_graph(n_clicks, value,value_stock ,start_date,end_date):
+    fig = go.Figure(layout=layout)
+    
     start = datetime.strptime(start_date[:10], '%Y-%m-%d')
     end = datetime.strptime(end_date[:10], '%Y-%m-%d')
 
@@ -160,11 +168,11 @@ def update_graph(n_clicks, value,value_stock ,start_date,end_date):
         prediction = rf_model.predict(df_test[['open', 'close', 'high', 'low']])
         predictions = pd.DataFrame({"predictions": prediction}, index=df_test.index)
 
-        fig = go.Figure(layout=layout)
+        
 
         fig.add_trace(go.Scatter(y=data['adj close'][:num_split], x=data.index[:num_split], name='training data'))
         fig.add_trace(go.Scatter(y=data['adj close'][num_split:], x=data.index[num_split:], name='test data'))
-        fig.add_trace(go.Scatter(y=predictions.predictions.loc[:end], x=data.index[:num_prediction], name='prediction RF'))
+        fig.add_trace(go.Scatter(y=predictions.predictions.loc[:end], x=predictions.index[:num_prediction], name='prediction RF'))
 
         fig.update_layout(title='APPLE Price- adjusted close ($)', xaxis_title="date",
                           yaxis_title="Stock price($)", )
@@ -183,6 +191,7 @@ def update_graph(n_clicks, value,value_stock ,start_date,end_date):
 
 def display_model_evaluation(n_clicks, value,value_stock ,start_date,end_date):
     if value_stock == 'AAPL' and value == 'Random Forest Regression':
+        result_list = []
         start = datetime.strptime(start_date[:10], '%Y-%m-%d')
         end = datetime.strptime(end_date[:10], '%Y-%m-%d')
         # filename = 'random_forest.joblib'
@@ -206,7 +215,7 @@ def display_model_evaluation(n_clicks, value,value_stock ,start_date,end_date):
         prediction = rf_model.predict(df_test[['open', 'close', 'high', 'low']])
         predictions = pd.DataFrame({"predictions": prediction}, index=df_test.index)
         evaluation = calculate_results(predictions.predictions[:prediction_length], df_test['adj close'][:prediction_length])
-        result_list = []
+        
         for i in evaluation.items():
             result_list.append(f'{i[0]} : {i[1]}  , ')
 
