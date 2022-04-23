@@ -190,8 +190,9 @@ def update_graph(n_clicks, value,value_stock ,start_date,end_date):
                State('date-picker-range','end_date')])
 
 def display_model_evaluation(n_clicks, value,value_stock ,start_date,end_date):
+    result_list = []
     if value_stock == 'AAPL' and value == 'Random Forest Regression':
-        result_list = []
+        
         start = datetime.strptime(start_date[:10], '%Y-%m-%d')
         end = datetime.strptime(end_date[:10], '%Y-%m-%d')
         # filename = 'random_forest.joblib'
