@@ -25,4 +25,8 @@ The project is divided into three components:
 ## Instructions
 
 
-## Results
+##  Results
+
+<img width="964" alt="Dash 2022-04-25 22-35-32" src="https://user-images.githubusercontent.com/15786410/165170593-fabdad7b-6db5-4a2a-8e1a-ea54d21121f2.png">
+
+
