@@ -1,4 +1,4 @@
-# Capstone_project_stock_price_forecasting
+# Capstone project: Stock price forecasting
 
 
 ## Overview
@@ -31,7 +31,7 @@ The project is divided into three components:
 PS. in case of LSTM Deep learning model, you need to wait to allow model retrain data according to choosen time period
 
 
-Go to http://0.0.0.0:3001/
+Go to http://127.0.0.1:8050/
 
 
 ##  Results
