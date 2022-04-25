@@ -22,3 +22,7 @@ The project is divided into three components:
 - ML model using SARIMA 
 - Interactive application using Dash
 
+## Instructions
+
+
+## Results
