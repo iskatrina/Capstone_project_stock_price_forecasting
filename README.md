@@ -4,12 +4,12 @@
 ## Overview
 
 This project is part of Udacity Data Science project + some additions which I used or plan to use in the project to accompany it for further development . 
-Project offers few models which could be used to predict Stock prices for number of Stock choosen for Portfolio. Each model shows its accuracy in each case.
-Using Stock price forecast , could be developed strategy for Buy/Sell the Stock for possible profit. 
+Project offers few models which could be used to predict Stock prices for number of Stocks choosen for Portfolio within choosen timeframe. Each model shows its accuracy in each case.
+Using Stock price forecast , could help develop a strategy for Buying/Selling  Stocks for possible profit. 
 
 
 
-Content
+## Content
 
 The project is divided into three components:
 
