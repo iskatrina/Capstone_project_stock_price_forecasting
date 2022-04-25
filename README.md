@@ -24,6 +24,15 @@ The project is divided into three components:
 
 ## Instructions
 
+- Run the Dashapp_1.py
+- choose Stock name, model which you would like to use,  date range for prediction (1 day, 2,3,..30 days)
+- Press Predict button.
+
+PS. in case of LSTM Deep learning model, you need to wait to allow model retrain data according to choosen time period
+
+
+Go to http://0.0.0.0:3001/
+
 
 ##  Results
 
