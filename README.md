@@ -11,7 +11,7 @@ Using Stock price forecast , could help develop a strategy for Buying/Selling  S
 
 ## Content
 
-The project is divided into three components:
+The project is divided into several components:
 
 - Data retrieval 
 - Feature engeneering 
