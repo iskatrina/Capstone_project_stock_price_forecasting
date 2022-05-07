@@ -33,7 +33,7 @@ Goal: create predictive model/models of  price movements of a stock as accurate 
 The tasks involved are the folowing:
 
 * Retrieve Data from financial sites:
-        *  obtain information about stocks from S&P 500.
+        <br>*  obtain information about stocks from S&P 500.
 		*   retrive fundanemtal data of S&P 500 stocks from Qandle.
        *  Aquire pricing info for list of stocks from yFinance
 		- Combining data together
