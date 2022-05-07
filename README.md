@@ -34,23 +34,23 @@ The tasks involved are the folowing:
 
 * Retrieve Data from financial sites:
         <br>*  obtain information about stocks from S&P 500.
-		*   retrive fundanemtal data of S&P 500 stocks from Qandle.
-       *  Aquire pricing info for list of stocks from yFinance
+	<br>*   retrive fundanemtal data of S&P 500 stocks from Qandle.
+        <br>*  Aquire pricing info for list of stocks from yFinance
 		- Combining data together
 * Feature engeneering
 * Choosing Stocks from S&P 500 to build Portfolio
 * Optimize Porfolio. Define Optimal Risky Portfolio
 * ML model 
-        * using DeepLearning LSTM
-        *  using Random Forest
-        *  using SARIMA
+        <br> * using DeepLearning LSTM
+        <br> *  using Random Forest
+        <br> *  using SARIMA
 * Build interactive application using Dash
 
 
 Metrics
 
 To measure model performance I used metric:
- - MSE (Mean Squared Error) 
+<br>  - MSE (Mean Squared Error) 
 
 ## EDA
 
@@ -59,9 +59,9 @@ To measure model performance I used metric:
 
 Ive created several models to compare performance and accuracy of each.
 
-        *  Random Forest
-        *  SARIMA
-        *  DeepLearning LSTM
+        <br> *  Random Forest
+        <br> *  SARIMA
+        <br> *  DeepLearning LSTM
 
 
 ## Hyperparameter tuning
