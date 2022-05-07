@@ -85,7 +85,7 @@ For ARIMA/SARIMA model to hypertune parameters was used pmdarima.auto_arima()
 
 ##  Results
 
-An Dash application where use can choose a stock from Portfolio and choose the Model with which user can predict stock price. As well as accuracy (MSE)
+A Dash application where user can choose a stock from constructed Portfolio and choose the Model with which user can predict stock price. As well as accuracy (MSE)
 
 
 <img width="964" alt="Dash 2022-04-25 22-35-32" src="https://user-images.githubusercontent.com/15786410/165170593-fabdad7b-6db5-4a2a-8e1a-ea54d21121f2.png">
@@ -95,4 +95,15 @@ An Dash application where use can choose a stock from Portfolio and choose the M
 ## Conclusion/Reflection
 
 
+
+
 ## Improvements
+
+Prediction models perform descent but far from been perfect. And there is number of improvements could be made:
+- construct and use in the model additional features , ultimatly improving accuracy of prediction
+- develop algorythm to define and mark points in time when it is recommended to buy stock and when to sell. Depict it in a chart
+- backtest algorythm and model performance
+
+- 
+
+
