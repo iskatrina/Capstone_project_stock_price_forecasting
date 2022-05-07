@@ -16,9 +16,6 @@ Using Stock price forecast , could help develop a strategy for Buying/Selling  S
 
 PS. in case of LSTM Deep learning model, you need to wait to allow model retrain data according to choosen time period
 
-
-Go to http://127.0.0.1:8050/
-
 ## Problem Introduction
 
 Prediction of stock price movement is regarded as a challenging task of financial time series prediction. An accurate prediction of stock price movement may yield profits for investors. Due to the complexity of stock market data, development of efficient models for predicting is very difficult. 
