@@ -40,16 +40,16 @@ The tasks involved are the folowing:
 * Feature engeneering
 * Choosing Stocks from S&P 500 to build Portfolio
 * Optimize Porfolio. Define Optimal Risky Portfolio
-* ML model 
+* ML model creation:
         <br> * using DeepLearning LSTM
         <br> *  using Random Forest
         <br> *  using SARIMA
 * Build interactive application using Dash
 
 
-Metrics
+## Metrics
 
-To measure model performance I used metric:
+To measure model performance main metric was used is :
 <br>  - MSE (Mean Squared Error) 
 
 ## EDA
@@ -66,7 +66,7 @@ Ive created several models to compare performance and accuracy of each.
 
 ## Hyperparameter tuning
 
-To define best performing parameters:
+To define best performing parameters for each model I used hyperparameter tuning:
 
  for Random Forest model was used RandomizedSearchCV and search was performed on the following parameters:
 * n_estimators — number of trees in the forest
@@ -77,7 +77,7 @@ To define best performing parameters:
 * random_state — generated random numbers for the random forest.
 
 
-For ARIMA/SARIMA model to hyperfine parameters was used pmdarima.auto_arima() 
+For ARIMA/SARIMA model to hypertune parameters was used pmdarima.auto_arima() 
 
 
 ##  Results
