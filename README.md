@@ -4,7 +4,7 @@
 ## Overview
 
 This project is part of Udacity Data Science project + some additions which I used or plan to use in the project to accompany it for further development . 
-Project offers few models which could be used to predict Stock prices for number of Stocks choosen for Portfolio within choosen timeframe. Each model shows its accuracy in each case.
+Project offers few models which could be used to predict Stock price - adjusted Close - for number of Stocks choosen for Portfolio from S&P 500. Each model shows its accuracy.
 Using Stock price forecast , could help develop a strategy for Buying/Selling  Stocks for possible profit. 
 
 
@@ -24,6 +24,7 @@ Go to http://127.0.0.1:8050/
 Prediction of stock price movement is regarded as a challenging task of financial time series prediction. An accurate prediction of stock price movement may yield profits for investors. Due to the complexity of stock market data, development of efficient models for predicting is very difficult. 
 The traditional models follow a stochastic probabilistic approach, while more recent models are based on machine learning methods. 
 My ultimate goal is to create prediction which would help gain profit by trading stock by usig both machine learning methods and stochastic approach.
+In this work I aim to predict Adjusted Close Price of a stock with focus on first 1,2,7,14 up to 30 days and gain insight about its accuracy.
 
 
 ## Strategy to solve the problem
@@ -50,8 +51,8 @@ The tasks involved are the folowing:
 
 ## Metrics
 
-The error metrics were calculated over the test dataset for predicted next-day adjusted close. These predictions were scored on  
- - MSE (Mean Squared Error)  to indicate magnitude of error.
+The error metrics were calculated over the test dataset for predicted next-day adjusted close. These predictions were scored on  main metric 
+ - MSE (Mean Squared Error)  to indicate magnitude of error. It provides a quadratic loss function and that it also measures of the uncertainty in forecasting.
 
 <img width="519" alt="formula MSE - Google Search 2022-05-07 15-33-38" src="https://user-images.githubusercontent.com/15786410/167260522-3d9f2724-7641-4fd6-a8ee-6ceab75f6ab1.png">
 
@@ -92,8 +93,6 @@ A Dash application where user can choose a stock from constructed Portfolio and 
 <img width="964" alt="Dash 2022-04-25 22-35-32" src="https://user-images.githubusercontent.com/15786410/165170593-fabdad7b-6db5-4a2a-8e1a-ea54d21121f2.png">
 
 
-
-
 ## Conclusion/Reflection
 
 Forecasting models show high potential and could be developed and improved further. 
@@ -107,6 +106,6 @@ Prediction models perform descent but far from been perfect. And there is number
 - develop algorythm to define and mark points in time when it is recommended to buy stock and when to sell. Depict it in a chart
 - backtest algorythm and model performance
 
-- 
+
 
 
