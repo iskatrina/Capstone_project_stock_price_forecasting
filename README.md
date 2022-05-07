@@ -22,7 +22,8 @@ Go to http://127.0.0.1:8050/
 ## Problem Introduction
 
 Prediction of stock price movement is regarded as a challenging task of financial time series prediction. An accurate prediction of stock price movement may yield profits for investors. Due to the complexity of stock market data, development of efficient models for predicting is very difficult. 
-My ultimate goal is to create prediction which would help gain profit by trading stock.
+The traditional models follow a stochastic probabilistic approach, while more recent models are based on machine learning methods. 
+My ultimate goal is to create prediction which would help gain profit by trading stock by usig both machine learning methods and stochastic approach.
 
 
 ## Strategy to solve the problem
@@ -49,8 +50,8 @@ The tasks involved are the folowing:
 
 ## Metrics
 
-To measure model performance main metric was used is :
-<br>  - MSE (Mean Squared Error) 
+The error metrics were calculated over the test dataset for predicted next-day adjusted close. These predictions were scored on  
+ - MSE (Mean Squared Error)  to indicate magnitude of error.
 
 <img width="519" alt="formula MSE - Google Search 2022-05-07 15-33-38" src="https://user-images.githubusercontent.com/15786410/167260522-3d9f2724-7641-4fd6-a8ee-6ceab75f6ab1.png">
 
@@ -58,7 +59,7 @@ To measure model performance main metric was used is :
 ## EDA
 
 
-## Modelling
+## Forecastig Models
 
 Ive created several models to compare performance and accuracy of each.
 
@@ -92,8 +93,10 @@ A Dash application where user can choose a stock from constructed Portfolio and 
 
 
 
+
 ## Conclusion/Reflection
 
+Forecasting models show high potential and could be developed and improved further. 
 
 
 
