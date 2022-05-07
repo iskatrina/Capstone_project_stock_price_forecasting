@@ -52,6 +52,9 @@ The tasks involved are the folowing:
 To measure model performance main metric was used is :
 <br>  - MSE (Mean Squared Error) 
 
+<img width="519" alt="formula MSE - Google Search 2022-05-07 15-33-38" src="https://user-images.githubusercontent.com/15786410/167260522-3d9f2724-7641-4fd6-a8ee-6ceab75f6ab1.png">
+
+
 ## EDA
 
 
