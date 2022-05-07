@@ -36,7 +36,7 @@ The tasks involved are the folowing:
         <br>*  obtain information about stocks from S&P 500.
 	<br>*   retrive fundanemtal data of S&P 500 stocks from Qandle.
         <br>*  Aquire pricing info for list of stocks from yFinance
-		- Combining data together
+	<br>* Combining data together
 * Feature engeneering
 * Choosing Stocks from S&P 500 to build Portfolio
 * Optimize Porfolio. Define Optimal Risky Portfolio
