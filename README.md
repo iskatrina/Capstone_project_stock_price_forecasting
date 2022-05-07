@@ -88,6 +88,9 @@ A Dash application where user can choose a stock from constructed Portfolio and 
 
 <img width="964" alt="Dash 2022-04-25 22-35-32" src="https://user-images.githubusercontent.com/15786410/165170593-fabdad7b-6db5-4a2a-8e1a-ea54d21121f2.png">
 
+- The results for Random Forest on the test set are actually the best, if not tied for, on every stock. This is true for both MSE. 
+- LSTM model shows descent results and shows high potential , although performing less accurate then Random Forest.
+
 
 ## Conclusion/Reflection
 
