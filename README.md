@@ -94,7 +94,9 @@ A Dash application where user can choose a stock from constructed Portfolio and 
 
 ## Conclusion/Reflection
 
-Forecasting models show high potential and could be developed and improved further. 
+	Both forecasting models show high potentialin predicting Adj Close stock price within first 30 days of prediction and could be developed and improved further to serve the purpose of decision making - to buy or to sell particular stock. Since most important is the  accuracy of stock movement itself(up or down) and less the numbers in this simple strategy, these models could be enough to make this desicion and both models shows that it is realistic.
+  For further deveopment and improvements of models , more features should be designed and included in model prediction, and  technical indicators also could help accompany those desicion during buying or selling stock.
+  In this work accuracy of a model was checked only on the test set data and was not proved on the data exciding available dataset , which could bring extra challenges to the process.
 
 
 
