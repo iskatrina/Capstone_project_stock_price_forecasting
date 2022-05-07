@@ -20,7 +20,7 @@ PS. in case of LSTM Deep learning model, you need to wait to allow model retrain
 
 Prediction of stock price movement is regarded as a challenging task of financial time series prediction. An accurate prediction of stock price movement may yield profits for investors. Due to the complexity of stock market data, development of efficient models for predicting is very difficult. 
 The traditional models follow a stochastic probabilistic approach, while more recent models are based on machine learning methods. 
-My ultimate goal is to create prediction which would help gain profit by trading stock by usig both machine learning methods and stochastic approach.
+My ultimate goal is to create prediction which would help gain profit by trading stock by using  machine learning methods .
 In this work I aim to predict Adjusted Close Price of a stock with focus on first 1,2,7,14 up to 30 days and gain insight about its accuracy.
 
 
@@ -42,7 +42,7 @@ The tasks involved are the folowing:
 * ML model creation:
         <br> * using DeepLearning LSTM
         <br> *  using Random Forest
-        <br> *  using SARIMA
+ 
 * Build interactive application using Dash
 
 
@@ -62,7 +62,6 @@ The error metrics were calculated over the test dataset for predicted next-day a
 Ive created several models to compare performance and accuracy of each.
 
         <br> *  Random Forest
-        <br> *  SARIMA
         <br> *  DeepLearning LSTM
 
 
