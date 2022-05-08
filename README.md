@@ -56,6 +56,8 @@ The error metrics were calculated over the test dataset for predicted next-day a
 
 ## EDA
 
+Exloration of quality of data and distribution of Adj Close Price and Volume for each stock choosen for Portfolio
+
 
 ## Forecastig Models
 
