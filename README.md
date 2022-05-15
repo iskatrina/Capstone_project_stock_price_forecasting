@@ -4,23 +4,26 @@
 
 ### Project Overview
 
-This project is part of Udacity Data Science project + some additions which I used or plan to use in the project to accompany it for further development . 
-Project offers few models which could be used to predict Stock price - adjusted Close - for number of Stocks choosen for Portfolio from S&P 500. Each model shows its accuracy.
-Using Stock price forecast , could help develop a strategy for Buying/Selling  Stocks for possible profit. 
-
-
-
-### Problem Statement
+This project is part of Udacity Data Science project and envolves creating ML model and predict future market fluctuations of a Stock. 
+It envolves getting the market data, analysing them and creating forecaseting of Stock Price, in particular Adj Close Price, which is the goal of a project.
+Project consists of several parts. First is obtaining the data of market historical movements for stocks from S&P 500 and defining Portfolio of Stocks using Clustering techniques along with Domain techniques. Then Project explore and visualize data to understand them better. As a result, project provides few ML models which predict Stock price any Stock of Portfolio. Each model evaluaton based on its accuracy.
+Using Stock price forecast  could help to develop the progect further and buid a strategy for Buying/Selling Stocks for possible profit. 
 
 Prediction of stock price movement is regarded as a challenging task of financial time series prediction. An accurate prediction of stock price movement may yield profits for investors. Due to the complexity of stock market data, development of efficient models for predicting is very difficult. 
 The traditional models follow a stochastic probabilistic approach, while more recent models are based on machine learning methods. 
 My ultimate goal is to create prediction which would help gain profit by trading stock by using  machine learning methods .
-In this work I aim to predict Adjusted Close Price of a stock with focus on first 1,2,7,14 up to 30 days and gain insight about its accuracy.
+In this work I aim to predict Adjusted Close Price of a stock with focus on first 1,2,7,14 up to 30 days and gain insight about its accuracy with help of two ML models - Random Forest and DeepLearning LSTM.
+
+The approach, the methodology and the results are documented here. The
+conclusion is that Random Forest method is the most accurate algorithm to Forecast stock price but DeepLearning LSTM shows very high potential. 
+
+The project description is available from Udacity at this link - 
 
 
-### Strategy to solve the problem
 
-Basic strategy is to buy stock shares when the price is low, and sell them later when the price is higher. 
+### Problem Statement
+ Project doesnt provide any market data and I have to obtain them myself. Based on data exploration I need to choose best suitable forecasting technique and predict Stock Price and in particulary Adj Close. Evaluation of prediction based on accurasy metric, I choosed MSE metric for my ML models.
+
 Goal: create predictive model/models of  price movements of a stock as accurate as possible and help make more data informed decision while buying or selling stock to gain a profit. 
 
 The tasks involved are the folowing:
