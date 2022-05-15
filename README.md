@@ -1,6 +1,6 @@
 # Capstone project: Stock price forecasting
 
-## Project Definision
+## Project Definition
 
 ### Project Overview
 
@@ -40,7 +40,7 @@ The tasks involved are the folowing:
 * Build interactive application using Dash
 
 
-## Metrics
+### Metrics
 
 The error metrics were calculated over the test dataset for predicted next-day adjusted close. These predictions were scored on  main metric 
  - MSE (Mean Squared Error)  to indicate magnitude of error. It provides a quadratic loss function and that it also measures of the uncertainty in forecasting.
