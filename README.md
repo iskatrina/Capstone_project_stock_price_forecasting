@@ -104,8 +104,7 @@ For the main part of this project, Ive created several models to compare perform
         <br> *  DeepLearning LSTM https://github.com/iskatrina/Capstone_project_stock_price_forecasting/blob/main/Notebooks/6_4_CapstoneProject_ML_modeling_DeepLearning_LSTM.ipynb
 
 
-### Refinement
-### Hyperparameter tuning
+### Refinement / Hyperparameter tuning
 
 To define best performing parameters for each model I used hyperparameter tuning:
 
