@@ -99,9 +99,10 @@ https://github.com/iskatrina/Capstone_project_stock_price_forecasting/blob/main/
 
 For the main part of this project, Ive created several models to compare performance and accuracy of each. I included into submittion only two:
 
-        <br> *  Random Forest ()
+<br> *Random Forest ()
 	https://github.com/iskatrina/Capstone_project_stock_price_forecasting/blob/main/Notebooks/8_1_CapstoneProject_ML_RandomForest.ipynb
-        <br> *  DeepLearning LSTM https://github.com/iskatrina/Capstone_project_stock_price_forecasting/blob/main/Notebooks/6_4_CapstoneProject_ML_modeling_DeepLearning_LSTM.ipynb
+	
+<br> *DeepLearning LSTM https://github.com/iskatrina/Capstone_project_stock_price_forecasting/blob/main/Notebooks/6_4_CapstoneProject_ML_modeling_DeepLearning_LSTM.ipynb
 
 
 ### Refinement / Hyperparameter tuning
