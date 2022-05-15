@@ -124,25 +124,29 @@ For ARIMA/SARIMA model to hypertune parameters was used pmdarima.auto_arima()
 
 ### Model Evaluation and Validation
 
-A Dash application where user can choose a stock from constructed Portfolio and choose the Model with which user can predict stock price. As well as accuracy (MSE)
+All results were measured by accuracy metric MSE and showed in the application field.
+
+- The results for Random Forest on the test set are actually showed the best accuracy after hyperparameters tuning, if not tied for on every stock. This is true for MSE. 
+- LSTM model shows descent results and shows high potential , although performing less accurate then Random Forest.
 
 
 <img width="964" alt="Dash 2022-04-25 22-35-32" src="https://user-images.githubusercontent.com/15786410/165170593-fabdad7b-6db5-4a2a-8e1a-ea54d21121f2.png">
 
-- The results for Random Forest on the test set are actually the best after hyperparameters tuning, if not tied for, on every stock. This is true for MSE. 
-- LSTM model shows descent results and shows high potential , although performing less accurate then Random Forest.
 
-### Justification
+### Justification 
+ Random Forest shows the best performance over LSTM model.
 
 ## Conclusion
 ### Reflection
 
-	Both forecasting models show high potentialin predicting Adj Close stock price within first 30 days of prediction and could be developed and improved further to serve the purpose of decision making - to buy or to sell particular stock. Since most important is the  accuracy of stock movement itself(up or down) and less the numbers in this simple strategy, these models could be enough to make this desicion and both models shows that it is realistic.
+	Both forecasting models show high potentialin predicting Adj Close stock price within first 30 days of prediction and could be developed and improved further to serve the purpose of decision making - to buy or to sell particular stock. Since most important is the  accuracy of stock movement itself(up or down) and less the numbers in this basic strategy, these models could be enough to make this desicion and both models shows that it is realistic.
 	
 ### Improvement	
 
 
 ## Deliverables
+
+A Dash application where user can choose a stock from constructed Portfolio and choose the Model with which user can predict stock price. As well as accuracy (MSE)
 
 - Application
 - GitHub Repository
