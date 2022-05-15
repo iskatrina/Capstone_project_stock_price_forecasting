@@ -45,30 +45,63 @@ The tasks involved are the folowing:
 
 ### Metrics
 
-The error metrics were calculated over the test dataset for predicted next-day adjusted close. These predictions were scored on  main metric 
- - MSE (Mean Squared Error)  to indicate magnitude of error. It provides a quadratic loss function and that it also measures of the uncertainty in forecasting.
+Two forecast models were created and trained on a train dataset. Afterwards, each model performance was tested on a Test Dataset and its accuracy has been measured. 
+The error metric ( MSE (Mean Squared Error) ) was choosen as a main metric for measuring the accuracy of prediction, calculated over the test dataset for predicted next-day Adjusted Close, to indicate magnitude of error. It provides a quadratic loss function and that it also measures of the uncertainty in forecasting.
 
 <img width="519" alt="formula MSE - Google Search 2022-05-07 15-33-38" src="https://user-images.githubusercontent.com/15786410/167260522-3d9f2724-7641-4fd6-a8ee-6ceab75f6ab1.png">
 
 ## Analysis
 
-### Data Exploration
+### Data Exploration and Data Visualization
+ Stock tickers from S&P 500 were obtained, and extended by retriving fundanemtal data of S&P 500 stocks from Qandle.
+ Aquired pricing info for list of stocks from yFinance has been merged with thosedata together.
+ 
+ Exloration of quality of data showed that Data quality is just perfect and ready for further use by ML algorthms. 
+ EDA also gave an idea/visualization about how  Adj Close Price and Volume of each stock is distributed.
+ 
+ 
 
-Exloration of quality of data and distribution of Adj Close Price and Volume for each stock choosen for Portfolio
-
-
-### Data Visualization
 
 ## Methodology
 
 ### Data Preprocessing
 
+No further data preprocessing required since all data obtained with pipeline showed high quality .
+
 ### Implementatoin/ Forecastig Models
 
-Ive created several models to compare performance and accuracy of each.
+Initial setup
 
-        <br> *  Random Forest
-        <br> *  DeepLearning LSTM
+PyCharm and Jupyter Notebook were used to code the project in Python.
+
+
+
+This py file obtains data of historical market Prices: https://github.com/iskatrina/Capstone_project_stock_price_forecasting/blob/main/Capstoneproject_1_data_retrieval.py
+ - function sp500_list_retrieval() helps to scrap ticker names of S&P 500 from Wikipedia 
+ - function fundamental_data_pull() helps to obtain fundamental data from Quandle
+ - pricing_yfinance_data() helps to pull data from yfinance 
+ - and pipeline function - function data_collection() -  performs all pipeline and combines data together , which eventually saved into dataframes. Each dataframe contains information about each stock.
+
+
+For further exploration, portfolio construction and predictions were used number of functions-helpers, which you can find in py file : https://github.com/iskatrina/Capstone_project_stock_price_forecasting/blob/main/utilities/supportive_functions.py
+
+- function preprocess() - helps to prepare and extract needed data for further Analysis and predictions.
+- function calculate_results() - help to evaluate the accuracy of Predictiv model
+- function  csv_to_dataset() - helps to prepare and normilize data and separate in needed parts for Predictive model using DeepLearning LSTM technique.
+
+
+Using Modul ta , Ive engeneered additional techinical features for each stock.  Although I didnt use them in my Forecasting models yet, it gave me good foundation  for further extension of a project. Yuo can find it here: https://github.com/iskatrina/Capstone_project_stock_price_forecasting/blob/main/Notebooks/2_Capstoneproject_feature_engeneering.ipynb
+
+ALthough Udacity project didnt had it in requirenments, Ive implemented Cluster algorythm to constract  Portfolio from S&P 500 stocks, and you can find it here: https://github.com/iskatrina/Capstone_project_stock_price_forecasting/blob/main/Notebooks/4_Capstoneproject_Stock_choice_to_build_Portfolio.ipynb
+Also I optimized Portfolio using Efficient Frontier and Sharpe Ratio techniques, you can find Notebook here: 
+https://github.com/iskatrina/Capstone_project_stock_price_forecasting/blob/main/Notebooks/5_CapstoneProject_PortfolioOptimization_TargetPortfolio.ipynb 
+
+
+For the main part of this project, Ive created several models to compare performance and accuracy of each. I included into submittion only two:
+
+        <br> *  Random Forest ()
+	https://github.com/iskatrina/Capstone_project_stock_price_forecasting/blob/main/Notebooks/8_1_CapstoneProject_ML_RandomForest.ipynb
+        <br> *  DeepLearning LSTM https://github.com/iskatrina/Capstone_project_stock_price_forecasting/blob/main/Notebooks/6_4_CapstoneProject_ML_modeling_DeepLearning_LSTM.ipynb
 
 
 ### Refinement
